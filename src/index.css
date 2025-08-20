@@ -15,20 +15,13 @@
   --light-green: #c1fabc;
 }
 
-
 @layer base {
-
-
   body {
-    @apply p-5;
+    @apply min-h-screen flex items-start justify-center bg-gray-100;
     background-color: var(--bg-color);
     font-family: Poppins, sans-serif;
   }
-
-  
-
 }
-
 
 @layer components {
   .primary-button {
@@ -38,5 +31,4 @@
 }
 
 @layer utilities {
-
 }
