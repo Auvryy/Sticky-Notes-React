@@ -26,6 +26,7 @@ function App() {
   };
 
   return (
+    <>
     <main className="flex flex-col p-6 bg-white text-black rounded-xl shadow-lg w-[90%] sm:w-xl md:w-2xl mx-auto mt-10">
       <h1 className="font-semibold text-2xl text-center sm:text-start mb-3">
         Sticky Notes
@@ -42,7 +43,7 @@ function App() {
           note.map((n) => (
             <div
               key={n.id}
-              className="p-4 rounded-sm shadow break-words relative"
+              className="p-4 rounded-sm shadow break-words relative text-center"
               style={{ backgroundColor: n.color }}
             >
               <button
@@ -57,6 +58,8 @@ function App() {
         )}
       </section>
     </main>
+    </>
+    
   );
 }
 
