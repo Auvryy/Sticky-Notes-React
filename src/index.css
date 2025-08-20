@@ -1,1 +1,42 @@
 @import "tailwindcss";
+
+:root {
+  /* Neutral */
+  --bg-color: #f4f4f4;
+  --card-color: #ffffff;
+
+  /* Brand / Primary */
+  --primary-color: #4260f9;
+
+  /* Accents */
+  --yellow-color: #f3f694;
+  --pink-color: #ffdbef;
+  --light-blue: #dbf3ff;
+  --light-green: #c1fabc;
+}
+
+
+@layer base {
+
+
+  body {
+    @apply p-5;
+    background-color: var(--bg-color);
+    font-family: Poppins, sans-serif;
+  }
+
+  
+
+}
+
+
+@layer components {
+  .primary-button {
+    @apply py-2 px-4 rounded text-white cursor-pointer hover:opacity-85 active:opacity-70 duration-300;
+    background-color: var(--primary-color);
+  }
+}
+
+@layer utilities {
+
+}
